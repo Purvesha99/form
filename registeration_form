@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<title>Register</title>
+	<script type="text/javascript">
+		function results(){
+			var name = document.getElementById('name').value;
+			var number = document.getElementById('number').value;
+			if (document.getElementById('bachelor').checked) {
+				choice=document.getElementById('bachelor').value;
+			}else{
+				choice=document.getElementById('master').value;
+			}
+			var description=document.getElementById('description').value;
+			document.writeln("Name:"+name);
+			document.writeln("Number:"+number);
+			document.writeln("Choice of Course:"+choice);
+			document.writeln("Description:"+description);
+		}
+	</script>
 </head>
 <body>
-	<form action="" method="post">
+	<form name="myform" action="response.html" method="get">
 		<h1>Register</h1>
 		<div>
 			<label for="name">Name</label>
-			<input type="text" id="name" name="name" required="true">
+			<input type="text" id="name" name="name" required>
 		</div>
 		<br><br>
 		<div>
 			<label for="number">Phone Number:</label>
-			<input type="tel" id="number" name="number" required="true" pattern="[0-9]{10}">
+			<input type="tel" id="number" name="number" required pattern="[0-9]{10}">
 		</div>
 		<br><br>
 		<div>
@@ -46,6 +62,9 @@
 			<input type="checkbox" name="si4" id="data" value="si4">
 			<label for="data">Data Analytics with R</label>
 		</div>
+		<br><br>
+		<button type="submit" formtarget="_blank" onclick="return results();">Submit</button>
+		<button type="reset">Reset</button>
 	</form>
 </body>
 </html>
