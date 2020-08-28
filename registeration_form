@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="" method="post">
+		<h1>Register</h1>
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required="true">
+		</div>
+		<br><br>
+		<div>
+			<label for="number">Phone Number:</label>
+			<input type="tel" id="number" name="number" required="true" pattern="[0-9]{10}">
+		</div>
+		<br><br>
+		<div>
+			<label>Choice of Course:</label>
+			<br>
+			<input type="radio" id="bachelor" name="cc" value="cc1" class="light">
+			<label for="bachelor">Bachelor</label>
+			<br>
+			<input type="radio" id="master" name="cc" value="cc2">
+			<label for="master">Master</label>
+		</div>
+		<br><br>
+		<div>
+			<label for="description">Description:</label>
+			<textarea id="description"></textarea>
+		</div>	
+		<br><br>
+		<div>
+			<label>Subject Interests</label>
+			<br>
+			<input type="checkbox" name="si1" id="web" value="si1">
+			<label for="web">Web Development</label>
+			<br>
+			<input type="checkbox" name="si2" id="software" value="si2">
+			<label for="software">Software Project Development</label>
+			<br>
+			<input type="checkbox" name="si3" id="python" value="si3">
+			<label for="python">Python Programming</label>
+			<br>
+			<input type="checkbox" name="si4" id="data" value="si4">
+			<label for="data">Data Analytics with R</label>
+		</div>
+	</form>
+</body>
+</html>
+
